@@ -53,15 +53,20 @@
                 ?>
 
             <div style="padding : 10px 0px" >
-              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<?php the_title_attribute(); ?>" data-url="https://blog.dshimizu.jp/article/<?php the_ID(); ?>">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+                 class="twitter-share-button" 
+                 data-show-count="false" 
+                 data-text="<?php the_title_attribute(); ?>"
+                 data-url="https://blog.dshimizu.jp/article/<?php the_ID(); ?>">Tweet</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
               <a href="https://b.hatena.ne.jp/entry/s/<?php bloginfo('url'); ?>/article/<?php the_ID(); ?>"
-                  class="hatena-bookmark-button"
-                  data-hatena-bookmark-url="<?php echo esc_url( home_url() ); ?>/article/<?php the_ID(); ?>"
-                  data-hatena-bookmark-title="<?php the_title_attribute(); ?>"
-                  data-hatena-bookmark-layout="basic-label-counter"
-                  data-hatena-bookmark-lang="ja"
-              title="このエントリーをはてなブックマークに追加">
+                 class="hatena-bookmark-button"
+                 data-hatena-bookmark-url="<?php echo esc_url( home_url() ); ?>/article/<?php the_ID(); ?>"
+                 data-hatena-bookmark-title="<?php the_title_attribute(); ?>"
+                 data-hatena-bookmark-layout="basic-label-counter"
+                 data-hatena-bookmark-lang="ja"
+                 title="このエントリーをはてなブックマークに追加">
               <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
               </a>
 
