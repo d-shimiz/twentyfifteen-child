@@ -2,16 +2,21 @@
 
 // Customize "--more--"
 function modify_read_more_link() {
-    return '<a class="more-link" href="' . get_permalink() . '">続きを読む »</a>';
+    return '<a class="more-link" href="' . get_permalink() . '">続きを読む ≫</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 
 // Add Original CSS
 function theme_enqueue_styles() {
-	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
+function theme_enqueue_styles_toc() {
+        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/toc.css' );
+}
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles_toc' );
 
 
 // Add Original js
@@ -22,6 +27,33 @@ add_action( 'wp_enqueue_scripts', 'customjs');
 
 
 // short_code Customize
+function escape_short_code_terminal( $attr, $content = null ){
+    $content = clean_pre($content);
+    //$content = trim($content);
+    //$content = wpautop( $content );
+    $content = str_replace("\t", '    ', $content);
+    $content = str_replace('<', '&lt', $content);
+    $content = str_replace('>', '>', $content);
+    return '<pre class="terminal">'.$content.'</pre>';
+    //return '<code>'.$content.'</code>';
+}
+//add_shortcode('code', 'escape_short_code');
+add_shortcode('terminal', 'escape_short_code_terminal');
+
+function escape_short_code_text( $attr, $content = null ){
+    $content = clean_pre($content);
+    //$content = trim($content);
+    //$content = wpautop( $content );
+    $content = str_replace("\t", '    ', $content);
+    $content = str_replace('<', '&lt', $content);
+    $content = str_replace('>', '>', $content);
+    return '<pre class="terminal">'.$content.'</pre>';
+    //return '<code>'.$content.'</code>';
+}
+add_shortcode('text', 'escape_short_code_text');
+add_shortcode('file', 'escape_short_code_text');
+
+
 function escape_short_code( $attr, $content = null ){
     $content = clean_pre($content);
     //$content = trim($content);
@@ -29,10 +61,9 @@ function escape_short_code( $attr, $content = null ){
     $content = str_replace("\t", '    ', $content);
     $content = str_replace('<', '&lt', $content);
     $content = str_replace('>', '>', $content);
-    //return '<pre><code>'.$content.'</code></pre>';
     return '<code>'.$content.'</code>';
 }
-add_shortcode('code', 'escape_short_code');
+add_shortcode('file', 'escape_short_code');
 
 
 // Customize Comment Post
