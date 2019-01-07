@@ -79,9 +79,19 @@ function custom_comment_form_fields( $fields){
 }
 add_filter( 'comment_form_default_fields', 'custom_comment_form_fields' );
 
+// Hatena Bookmark Button JS
+function hatena_bookmark_button_js() {
+?>
+  <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+}
+<?php
+}
+add_action('wp_head', 'hatena_bookmark_button_js');
+
 
 // Google Analytics Tag
-function wp_google_analytics(){ ?>
+function wp_google_analytics(){
+?>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -92,6 +102,7 @@ function wp_google_analytics(){ ?>
     ga('send', 'pageview');
 
   </script>
-<?php }
+<?php
+}
 add_action('wp_head', 'wp_google_analytics');
 ?>
