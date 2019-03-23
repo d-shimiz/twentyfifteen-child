@@ -84,10 +84,12 @@ ol {
 li > ul,
 li > ol {
         margin-bottom: 0;
+        margin-top: 0;
 }
 
 p {
-	margin-bottom: 0.0em;
+	margin-bottom: 1.0em;
+	margin-top: 1.0em;
 }
 
 .social-navigation a[href*="dropbox.com"]:before {
@@ -191,8 +193,10 @@ input,
 select,
 textarea {
 	color: #333;
-        font-family: Trebuchet,Arial,Verdana,Sans-serif,'Trebuchet MS', Consolas, 'Courier New', Courier, Monaco, monospace;
+        font-family:Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS PGothic,sans-serif;
         /*
+        font-family: Trebuchet,Arial,Verdana,Sans-serif,'Trebuchet MS', Consolas, 'Courier New', Courier, Monaco, monospace;
+        font-family:Helvetica Neue,Helvetica,Arial,繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3,Hiragino Kaku Gothic Pro,繝｡繧､繝ｪ繧ｪ,Meiryo,?ｭ?ｳ\ ?ｰ繧ｴ繧ｷ繝?け,MS PGothic,sans-serif}
 	font-family: " Georgia Serif",Arial,Helvetica,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
 	font-family: "Georgia Serif";
         */
@@ -295,7 +299,8 @@ a:focus {
 	background-color: #fff;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
 	/*padding: 7.6923%;*/
-	padding: 3.6923%;
+	/* padding: 3.6923%; */
+	padding: 3.84615%;
 }
 
 /**
@@ -308,7 +313,7 @@ a:focus {
 .widget textarea {
 	font-size: 16px;
 	font-size: 1.6rem;
-	line-height: 1.5;
+	line-height: 2.5;
 	/* font-size: 14px;
 	font-size: 1.4rem;
 	line-height: 1.4; */
@@ -344,6 +349,13 @@ a:focus {
 /**
  * 12.0 Content
  */
+
+.content-area {
+        float: left;
+        width: 100%;
+        font-size: 17px;
+	line-height: 2.0;
+}
 
 
 /**
@@ -582,6 +594,18 @@ a:focus {
  */
 
 @media screen and (min-width: 38.75em) {
+	textarea {
+		/* 
+                font-size: 17px;
+		font-size: 1.7rem;
+		line-height: 1.6471;
+                */
+		font-size: 102%;
+                line-height: 1.75;
+                margin-bottom: 0.5em;
+		margin-top: 0.5em;
+	}
+
         p {
 		margin-bottom: 0.0em;
         }
@@ -666,12 +690,15 @@ a:focus {
 	input,
 	select,
 	textarea {
-		/* font-size: 17px;
+		/* 
+                font-size: 17px;
 		font-size: 1.7rem;
-		line-height: 1.6471; */
-		font-size: 16px;
-		font-size: 1.6rem;
-                line-height: 1.6471;
+		line-height: 1.6471;
+                */
+		font-size: 102%;
+                line-height: 1.75;
+                margin-bottom: 0.5em;
+		margin-top: 0.5em;
 	}
 
 	button,
@@ -691,8 +718,8 @@ a:focus {
 		/* margin-bottom: 1.6471em; */
                 /* margin-bottom: 0.25em; */
                 /* margin-bottom: 1.0em; */
-                margin-bottom: 0.5em;
-		margin-top: 0.5em;
+                margin-bottom: 1.0em;
+		margin-top: 1.0em;
 		/* margin-top: 1.0em; */
 	}
         ul,
@@ -829,12 +856,17 @@ a:focus {
 	input,
 	select,
 	textarea {
-		/* font-size: 19px;
+		/*
+                font-size: 19px;
 		font-size: 1.9rem;
-		line-height: 1.6842; */
+		line-height: 1.6842;
                 font-size: 16px;
                 font-size: 1.6rem;
-                line-height: 1.6;
+                */
+                font-size: 103%;
+                line-height: 1.75;
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
 	}
 
 	button,
@@ -853,9 +885,9 @@ a:focus {
 	table {
 		/* margin-bottom: 1.6842em; */
 		/* margin-bottom: 0.25em; */
-		margin-bottom: 0.5em;
+		margin-bottom: 1.0em;
 		/*margin-bottom: 1.0em;*/
-		margin-top: 0.5em;
+		margin-top: 1.0em;
 		/* margin-top: 1.0em; */
 	}
         ul,
@@ -949,10 +981,13 @@ a:focus {
                 /*
                 font-size: 15px;
                 font-size: 1.5rem;
-                line-height: 1.5;
-                */
                 font-size: 20px;
                 font-size: 2.0rem;
+                */
+                font-size: 107%;
+                line-height: 1.75;
+                margin-bottom: 0.5em;
+		margin-top: 0.5em;
 	}
 
         .widget-area {
@@ -1009,8 +1044,8 @@ a:focus {
 		/* margin-bottom: 1.6em;a*/
                 /* margin-bottom: 0.25em; */
                 /* margin-bottom: 1.0em; */
-                margin-bottom: 0.5em;
-		margin-top: 0.5em;
+                margin-bottom: 1.0em;
+		margin-top: 1.0em;
 		/*margin-top: 1.0em;*/
 	}
 
@@ -1028,7 +1063,7 @@ a:focus {
 		padding: 0 20%;
 		*/
 		margin: 10% 0 10%;
-		padding: 0 10%;
+		padding: 0 5%;
 	}
 
 	.hentry,
@@ -1142,8 +1177,11 @@ a:focus {
                 /*
                 font-size: 15px;
                 font-size: 1.5rem;
-                line-height: 1.5;
                 */
+                font-size: 107%;
+                line-height: 2.0;
+                margin-bottom: 0.5em;
+		margin-top: 0.5em;
 	}
 
 	button,
@@ -1163,8 +1201,8 @@ a:focus {
 		/* margin-bottom: 1.6471em;*/
                 /* margin-bottom: 0.25em; */
                 /* margin-bottom: 1.0em; */
-                margin-bottom: 0.5em;
-		margin-top: 0.5em;
+                margin-bottom: 1.0em;
+		margin-top: 1.0em;
 		/* margin-top: 1.0em; */
 	}
         ul,
@@ -1257,12 +1295,17 @@ a:focus {
 	input,
 	select,
 	textarea {
-		/* font-size: 19px;
+		/*
+                font-size: 19px;
 		font-size: 1.9rem;
-		line-height: 1.6842; */
+		line-height: 1.6842;
                 font-size: 15px;
                 font-size: 1.5rem;
-                line-height: 1.5;
+                */
+		font-size: 107%;
+                line-height: 2.0;
+                margin-bottom: 0.5em;
+		margin-top: 0.5em;
 	}
 
 	p,
@@ -1277,8 +1320,8 @@ a:focus {
 		/* margin-bottom: 1.6842em;*/
                 /* margin-bottom: 0.25em; */
                 /* margin-bottom: 1.0em;*/
-                margin-bottom: 0.5em;
-		margin-top: 0.5em;
+                margin-bottom: 1.0em;
+		margin-top: 1.0em;
 		/* margin-top: 1.0em; */
 	}
 
@@ -1400,6 +1443,7 @@ a:focus {
 h1 {
   font-size:20px;
 }
+
 h2 {
   text-transform: none;
 /*
@@ -1411,6 +1455,7 @@ h2 {
   padding: 5px 0 5px 10px;
 */
 }
+
 h3 {
   font-family: serif;
 /*
@@ -1425,6 +1470,7 @@ h3 {
   padding: 0px 0.0em 0em;
 */
 }
+
 h4 {
   font-size:18px;
   border-left:5px solid #777;
@@ -1434,6 +1480,7 @@ h4 {
   margin: 30px 0 15px 0;
   padding: 5px 0 5px 10px;
 }
+
 h5 {
   font-size: 1.2em;
   background-color: white;
@@ -1455,6 +1502,7 @@ h5 {
   /* padding: 0px 0.0em 0em; */
   padding: 2.5px 0 2.5px 5px;
 }
+
 h6 {
   font-size: 1.1em;
   /*
@@ -1484,6 +1532,7 @@ pre {
   font-size: 1em;
   /*font-size: 0.9em;*/
 }
+
 pre.terminal {
   font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
   font-size: 1.0em;
@@ -1497,7 +1546,11 @@ pre.terminal {
   text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
   */
   background: #141414;
+  max-width: 80em;
+  white-space: pre;
+  overflow: auto;
   /*
+  max-height: 25em;
   color: #45D40C;
   */
   color: #F5F5F5;
@@ -1505,39 +1558,66 @@ pre.terminal {
   /* background-color: #e6e6e6;
   border-radius: 2px;/* CSS3 */
   /*
-  white-space: pre;
-  overflow: auto;
-  /*overflow-x: auto;*/
+  overflow-x: auto;
   /*
   -moz-border-radius: 5px;    /* Firefox */
   /*
   -webkit-border-radius: 5px; /* Safari,Chrome */
-
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
   -moz-border-radius-bottomright: 3px;
   -moz-border-radius-bottomleft: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
-
 }
 
 pre.file, pre.text {
-font-size: 1.0em;
-border: 1px solid #000000;
-/*
-border: 1px solid #ffffe5;
-border: 1px solid #dddddd;
-background-color: #DDEEFF;
-*/
-background-color: #EFF6FE;
-/* background-color: #eeeeee; */
-/* background-color: #ffffcc; */
-color: #000000;
-border-radius: 2px;         /* CSS3 */
--moz-border-radius: 5px;    /* Firefox */
--webkit-border-radius: 5px; /* Safari,Chrome */
+  font-size: 1.0em;
+  border: 1px solid #000000;
+  /*
+  border: 1px solid #ffffe5;
+  border: 1px solid #dddddd;
+  background-color: #DDEEFF;
+  */
+  background-color: #EFF6FE;
+  /* background-color: #eeeeee; */
+  /* background-color: #ffffcc; */
+  color: #000000;
+  border-radius: 2px;         /* CSS3 */
+  -moz-border-radius: 5px;    /* Firefox */
+  -webkit-border-radius: 5px; /* Safari,Chrome */
 }
+
+pre.doc {
+/*
+margin:1em 20px;
+margin: 0 1em 1em;
+padding: 0.5em;
+background-color: #f0f0ff;
+*/
+border-color: #EFF6FE;
+background-color: #EFF6FE;
+border-left: 1px solid #000000;
+color: #000000;
+line-height: 150%;
+/*
+border-right: 0px #f0f0ff;
+border-bottom: 0px #f0f0ff;
+border-top: 0px #f0f0ff;
+border-left: 0px #f0f0ff;
+*/
+}
+
+pre.book-memo {
+    /*
+    font-size: 2.0em;
+    line-height: 120%;
+    */
+    border: 1px solid #000000;
+    background-color: #d7dde4;
+    line-height: 1.7;
+}
+
 /*
 pre.line-numbers {
     position: relative;
@@ -1559,56 +1639,54 @@ pre.line-numbers>code{position:relative}.line-numbers .line-numbers-rows{positio
 code{color:inherit;font-weight:700;background-color:inherit;padding:1px}strong.userinput code{color:inherit;font-weight:700;background-color:inherit;padding:1px}code.filename{color:black}span.section span strong.command{color:black}
 */
 
-
 code {
-font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
-line-height: 120%;
-white-space: pre-wrap;
-border-radius: 1.5px;
-border-style: ridge groove groove ridge;
-font-size: 95%;
-/*
-border-radius: 2px;
-background: #e6e6e6;
-background-color: #eeeeee;
-background: #dddddd;
-*/
-background: #eee;
-background-position: 0 -64px;
-overflow: auto;
-margin: 0;
-padding: 0.1em 0.4em;
-/*border: 1px solid #dddddd;*/
-border-radius: 1px;         /* CSS3 */
--moz-border-radius: 1px;    /* Firefox */
--webkit-border-radius: 1px; /* Safari,Chrome */
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+  line-height: 120%;
+  white-space: pre-wrap;
+  border-radius: 1.5px;
+  border-style: ridge groove groove ridge;
+  font-size: 95%;
+  /*
+  border-radius: 2px;
+  background: #e6e6e6;
+  background-color: #eeeeee;
+  background: #dddddd;
+  */
+  background: #eee;
+  background-position: 0 -64px;
+  overflow: auto;
+  margin: 0;
+  padding: 0.1em 0.4em;
+  /*border: 1px solid #dddddd;*/
+  border-radius: 1px;         /* CSS3 */
+  -moz-border-radius: 1px;    /* Firefox */
+  -webkit-border-radius: 1px; /* Safari,Chrome */
 
 border: 1.5px solid #dddddd;
 }
 
 pre.code {
-line-height: 120%;
-white-space: pre-wrap;
-border-radius: 1.5px;
-border-style: ridge groove groove ridge;
-font-size: 95%;
-/*
-border-radius: 2px;
-background: #e6e6e6;
-background-color: #eeeeee;
-background: #dddddd;
-*/
-background: #eee;
-background-position: 0 -64px;
-overflow: auto;
-margin: 0;
-padding: 0.1em 0.4em;
-/*border: 1px solid #dddddd;*/
-border-radius: 1px;         /* CSS3 */
--moz-border-radius: 1px;    /* Firefox */
--webkit-border-radius: 1px; /* Safari,Chrome */
-
-border: 1.5px solid #dddddd;
+  line-height: 120%;
+  white-space: pre-wrap;
+  border-radius: 1.5px;
+  border-style: ridge groove groove ridge;
+  font-size: 95%;
+  /*
+  border-radius: 2px;
+  background: #e6e6e6;
+  background-color: #eeeeee;
+  background: #dddddd;
+  */
+  background: #eee;
+  background-position: 0 -64px;
+  overflow: auto;
+  margin: 0;
+  padding: 0.1em 0.4em;
+  /*border: 1px solid #dddddd;*/
+  border-radius: 1px;         /* CSS3 */
+  -moz-border-radius: 1px;    /* Firefox */
+  -webkit-border-radius: 1px; /* Safari,Chrome */
+  border: 1.5px solid #dddddd;
 }
 
 .cust01 {
@@ -1618,6 +1696,7 @@ border-spacing: 0px;
 border-top: 1px solid #ccc;
 border-left: 1px solid #ccc;
 }
+
 .cust01 th{
 width: 25%;
 padding: 4px;
@@ -1630,12 +1709,14 @@ border-left: 1px solid #fff;
 border-right: 1px solid #ccc;
 border-bottom: 1px solid #ccc;
 }
+
 .cust01 td{
 padding: 4px;
 background-color: #fafafa;
 border-right: 1px solid #ccc;
 border-bottom: 1px solid #ccc;
 }
+
 ul li {
   padding: 0;
   /* margin: 0px 25px; */
@@ -1643,19 +1724,23 @@ ul li {
   text-decoration: none;
   text-transform: none;
 }
+
 ul.cont li.cont {
   padding: 0;
   margin: 0 0 0 5px;
   text-decoration: none;
 }
+
 ol li {
   padding: 0;
   margin: 0 0 0 25px;
 }
+
 ol.cont li.cont {
   padding: 0;
   margin: 0 0 0 25px;
 }
+
 .hatena-bookmark-widget-body,
 .hatena-bookmark-widget-footer {
                 margin-bottom: 0.25em;
