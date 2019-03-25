@@ -71,6 +71,25 @@
  * 4.0 Elements
  */
 
+ul li {
+  padding: 0;
+  /* margin: 0px 25px; */
+  margin: 0 0 0 25px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+ol li {
+  padding: 0;
+  margin: 0 0 0 25px;
+}
+
+ol.cont li.cont {
+  padding: 0;
+  margin: 0 0 0 25px;
+}
+
+
 
 /**
  * 5.0 Forms
@@ -86,11 +105,28 @@
  * 6.1 Links
  */
 
+a {
+	color: #5588aa;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #707070;
+	text-decoration: underline;
+}
+
 
 /**
  * 6.2 Menus
  */
 
+.main-navigation a {
+        display: block;
+        padding: 0.8em 0;
+        position: relative;
+        text-decoration: none;
+}
 
 /**
  * 7.0 Accessibility
@@ -116,10 +152,41 @@
  * 11.0 Widgets
  */
 
+.textwidget a {
+        /* border-bottom: 1px solid #333; */
+        border-bottom: none;
+}
+
+.textwidget a:hover,
+.textwidget a:focus {
+        border-bottom: 0;
+}
 
 /**
  * 12.0 Content
  */
+
+.entry-content a,
+.entry-summary a,
+.page-content a,
+.comment-content a,
+.pingback .comment-body > a {
+        /* border-bottom: 1px solid #333; */
+        border-bottom: none;
+}
+
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-summary a:hover,
+.entry-summary a:focus,
+.page-content a:hover,
+.page-content a:focus,
+.comment-content a:hover,
+.comment-content a:focus,
+.pingback .comment-body > a:hover,
+.pingback .comment-body > a:focus {
+        border-bottom: 0;
+}
 
 
 /**
@@ -173,9 +240,11 @@
  * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
  */
 @-ms-viewport {
+
 }
 
 @viewport {
+
 }
 
 /**
