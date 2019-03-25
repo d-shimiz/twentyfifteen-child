@@ -46,7 +46,7 @@
  *    16.6 - Desktop Large
  *    16.7 - Desktop X-Large
  * 17.0 - Print
- * 99.9 - Custom 
+ * 99.9 - Custom Style Define
  */
 
 
@@ -316,4 +316,209 @@ a:focus {
 
 @media print {
 
+}
+
+/**
+ * 99.0 -  Custom Style Define
+ */
+
+h1 {
+	font-size:20px;
+}
+
+h2 {
+	text-transform: none;
+}
+
+h3 {
+	font-family: serif;
+}
+
+h4 {
+	font-size:18px;
+	border-left:5px solid #777;
+	border-bottom:1px dotted #777;
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+	padding: 5px 0 5px 10px;
+}
+
+h5 {
+	font-size: 1.2em;
+	background-color: white;
+	text-transform: none;
+	font: normal normal Arial, Serif;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	margin: 1.0em 0 1.0em 0em;
+	padding: 2.5px 0 2.5px 5px;
+}
+
+h6 {
+	font-size: 1.1em;
+	font: normal normal Arial, Serif;
+	border-bottom:1px dotted #000000;
+	text-transform: none;
+	margin: 5px 0 5px 0;
+	padding: 0px 0.0em 0em;
+}
+
+pre {
+	/*white-space: pre-wrap;*/       /* css-3 */
+	/*white-space: -moz-pre-wrap;*/  /* Mozilla, since 1999 */
+	/*white-space: -pre-wrap;*/      /* Opera 4-6 */
+	/*white-space: -o-pre-wrap;*/    /* Opera 7 */
+	/*word-wrap: break-word;*/       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	margin: 1em;
+	padding: 0.5em;
+	line-height: 1em;
+	font-size: 1em;
+	/*font-size: 0.9em;*/
+}
+
+pre.terminal {
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+	font-size: 1.0em;
+	line-height: 120%;
+	/* border: 1px solid #000000; */
+	border-style: ridge groove groove ridge;
+	/*border-style: ridge; */
+	/* border: #999 double 1px; */
+	/*
+	background-color: #dddddd;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+	*/
+	background: #141414;
+	max-width: 80em;
+	white-space: pre;
+	overflow: auto;
+	/*
+	max-height: 25em;
+	color: #45D40C;
+	*/
+	color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+	/* background-color: #e6e6e6;
+	border-radius: 2px;/* CSS3 */
+	/*
+	overflow-x: auto;
+	/*
+	-moz-border-radius: 5px;    /* Firefox */
+	/*
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+pre.file, pre.text {
+	font-size: 1.0em;
+	border: 1px solid #000000;
+	/*
+	border: 1px solid #ffffe5;
+	border: 1px solid #dddddd;
+	background-color: #DDEEFF;
+	*/
+	background-color: #EFF6FE;
+	/* background-color: #eeeeee; */
+	/* background-color: #ffffcc; */
+	color: #000000;
+	border-radius: 2px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+}
+
+pre.doc {
+	/*
+	margin:1em 20px;
+	margin: 0 1em 1em;
+	padding: 0.5em;
+	background-color: #f0f0ff;
+	*/
+	border-color: #EFF6FE;
+	background-color: #EFF6FE;
+	border-left: 1px solid #000000;
+	color: #000000;
+	line-height: 150%;
+	/*
+	border-right: 0px #f0f0ff;
+	border-bottom: 0px #f0f0ff;
+	border-top: 0px #f0f0ff;
+	border-left: 0px #f0f0ff;
+	*/
+}
+
+pre.book-memo {
+	/*
+	font-size: 2.0em;
+	line-height: 120%;
+	*/
+	border: 1px solid #000000;
+	background-color: #d7dde4;
+	line-height: 1.7;
+}
+
+code {
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+	line-height: 120%;
+	white-space: pre-wrap;
+	border-radius: 1.5px;
+	border-style: ridge groove groove ridge;
+	font-size: 95%;
+	/*
+	border-radius: 2px;
+	background: #e6e6e6;
+	background-color: #eeeeee;
+	background: #dddddd;
+	*/
+	background: #eee;
+	background-position: 0 -64px;
+	overflow: auto;
+	margin: 0;
+	padding: 0.1em 0.4em;
+	/*border: 1px solid #dddddd;*/
+	border-radius: 1px;         /* CSS3 */
+	-moz-border-radius: 1px;    /* Firefox */
+	-webkit-border-radius: 1px; /* Safari,Chrome */
+	border: 1.5px solid #dddddd;
+}
+
+pre.code {
+	line-height: 120%;
+	white-space: pre-wrap;
+	border-radius: 1.5px;
+	border-style: ridge groove groove ridge;
+	font-size: 95%;
+	/*
+	border-radius: 2px;
+	background: #e6e6e6;
+	background-color: #eeeeee;
+	background: #dddddd;
+	*/
+	background: #eee;
+	background-position: 0 -64px;
+	overflow: auto;
+	margin: 0;
+	padding: 0.1em 0.4em;
+	/*border: 1px solid #dddddd;*/
+	border-radius: 1px;         /* CSS3 */
+	-moz-border-radius: 1px;    /* Firefox */
+	-webkit-border-radius: 1px; /* Safari,Chrome */
+	border: 1.5px solid #dddddd;
+}
+
+
+.hatena-bookmark-widget-body,
+.hatena-bookmark-widget-footer {
+	margin-bottom: 0.25em;
+	margin-top: 0.5em;
 }
