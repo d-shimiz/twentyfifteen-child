@@ -252,9 +252,27 @@ a:focus {
  */
 
 @media screen and (min-width: 38.75em) {
-	
-}
+        .site-main {
+                padding: 0;
+        }	
 
+        .hentry,
+        .page-header,
+        .page-content {
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+                margin: 0 1%;
+        }
+
+        .comments-area {
+                border-top: 0;
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+		/*
+                margin: 7.6923% 7.6923% 0;
+		*/
+                margin: 0 1%;
+        }
+
+}
 
 /**
  * 16.2 Tablet Small 740px
@@ -279,9 +297,26 @@ a:focus {
  */
 
 @media screen and (min-width: 59.6875em) {
-	
-}
+        .site-main {
+                padding: 0;
+        }	
 
+        .hentry,
+        .page-header,
+        .page-content {
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+                margin: 0 1%;
+        }
+
+        .comments-area {
+                border-top: 0;
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+		/*
+                margin: 7.6923% 7.6923% 0;
+		*/
+                margin: 0 1%;
+        }
+}
 
 /**
  * 16.5 Desktop Medium 1100px
