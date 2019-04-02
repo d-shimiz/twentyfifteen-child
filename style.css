@@ -71,9 +71,9 @@
  * 4.0 Elements
  */
 
+/*
 ul li {
   padding: 0;
-  /* margin: 0px 25px; */
   margin: 0 0 0 25px;
   text-decoration: none;
   text-transform: none;
@@ -88,7 +88,16 @@ ol.cont li.cont {
   padding: 0;
   margin: 0 0 0 25px;
 }
+*/
 
+ul,
+ol {
+        /*
+        margin: 0 0 1.6em 1.3333em;
+        margin: 1.6em 0 1.6em 1.3333em;
+        */
+        margin: 0.5em 0 0.5em 0.5em;
+}
 
 
 /**
@@ -386,7 +395,7 @@ h5 {
 	border-bottom-color: #000000;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	margin: 1.0em 0 1.0em 0em;
+	margin: 15px 0 10px 0;
 	padding: 2.5px 0 2.5px 5px;
 }
 
@@ -397,6 +406,25 @@ h6 {
 	text-transform: none;
 	margin: 5px 0 5px 0;
 	padding: 0px 0.0em 0em;
+}
+
+.entry-content h5,
+.entry-content h6,
+.entry-summary h5,
+.entry-summary h6,
+.page-content h5,
+.page-content h6,
+.comment-content h5,
+.comment-content h6 {
+                font-size: 17px;
+                font-size: 1.7rem;
+                line-height: 1.2353;
+                /* margin-top: 3.2941em; */
+                /* margin-top: 0.5em; */
+                /* margin-bottom: 1.6471em; */
+                /*margin-bottom: 0.5em;*/
+                margin-top: 2.5em;
+                margin-bottom: 1.2em;
 }
 
 pre {
@@ -417,7 +445,19 @@ pre {
 	/*font-size: 0.9em;*/
 }
 
-pre.terminal {
+#terminal-header {
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-radius: 5px;
+}
+
+pre.terminal2 {
 	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
 	font-size: 1.0em;
 	line-height: 120%;
@@ -494,12 +534,16 @@ pre.doc {
 
 pre.book-memo {
 	/*
-	font-size: 2.0em;
+	font-size: 75%;
 	line-height: 120%;
+	line-height: 1.25;
+        background: #beefd5;
 	*/
-	border: 1px solid #000000;
-	background-color: #d7dde4;
-	line-height: 1.7;
+        font-family: 'Helvetica Neue', 'Helvetica', 'Univers', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
+	font-size: 0.75em;
+	border: 0.5px solid #000000;
+	background-color: #E7F1ED;
+	line-height: 1.50;
 }
 
 code {
@@ -528,6 +572,8 @@ code {
 }
 
 pre.code {
+        font-family: monospace;
+        font-size: 0.8em;
 	line-height: 120%;
 	white-space: pre-wrap;
 	border-radius: 1.5px;
@@ -549,6 +595,53 @@ pre.code {
 	-moz-border-radius: 1px;    /* Firefox */
 	-webkit-border-radius: 1px; /* Safari,Chrome */
 	border: 1.5px solid #dddddd;
+}
+
+pre.terminal {
+  /*
+  background-color: black;
+  */
+  background-color: #3d3d3d;
+  background-image: radial-gradient(
+    /*
+    rgba(0, 150, 0, 0.75), black 120%
+    rgba(0, 120, 0, 0.75), black 100%
+    */
+  );
+  /*
+  height: 100vh;
+  */
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  /*
+  font: 1.3rem Inconsolata, monospace;
+  */
+  font: 1.0em Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /*
+    height: 100vh;
+    */
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+}
+::selection {
+  background: #0080FF;
+  text-shadow: none;
 }
 
 
