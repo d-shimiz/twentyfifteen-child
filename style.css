@@ -389,6 +389,7 @@ p {
 
 h1 {
 	font-size:20px;
+	border-bottom:0.25px solid #808080;
 }
 
 h2 {
@@ -478,7 +479,7 @@ pre {
     border-radius: 5px;
 }
 
-pre.terminal2 {
+pre.terminal {
 	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
 	font-size: 1.0em;
 	line-height: 120%;
@@ -489,8 +490,9 @@ pre.terminal2 {
 	/*
 	background-color: #dddddd;
 	text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
-	*/
 	background: #141414;
+	*/
+        background-color: #3d3d3d;
 	max-width: 80em;
 	white-space: pre;
 	overflow: auto;
@@ -618,7 +620,7 @@ pre.code {
 	border: 1.5px solid #dddddd;
 }
 
-pre.terminal {
+pre.terminal2 {
   /*
   background-color: black;
   */
