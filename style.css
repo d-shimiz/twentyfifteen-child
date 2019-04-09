@@ -387,16 +387,20 @@ p {
         margin-bottom: 0.5em;
 }
 
-h1 {
-	font-size:20px;
-	border-bottom:0.25px solid #808080;
+.entry-header h1 {
+	font-size:40px;
+	border-bottom:1px solid #C0C0C0;
 }
 
-h2 {
+.entry-header h2 {
 	text-transform: none;
+	border-bottom:1px solid #C0C0C0;
 }
 
-h3 {
+.entry-content h3,
+.entry-summary h3,
+.page-content h3,
+.comment-content h3 {
 	font-family: serif;
 	text-transform: none;
 }
