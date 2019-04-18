@@ -594,7 +594,8 @@ pre.file, pre.text {
 	-webkit-border-radius: 5px; /* Safari,Chrome */
 }
 
-pre.doc {
+pre.doc,
+pre.docs {
 	/*
 	margin:1em 20px;
 	margin: 0 1em 1em;
