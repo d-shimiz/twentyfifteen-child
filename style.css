@@ -76,8 +76,8 @@ textarea {
         font-family:Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS PGothic,sans-serif;
 	*/
         font-family: "Noto Sans", 'Helvetica Neue', 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-        font-size: 15px;
-        line-height: 1.6;
+        font-size: 17px;
+        line-height: 1.5;
 }
 
 p {
@@ -235,7 +235,7 @@ a:focus {
 }
 
 .entry-header h1 {
-	font-size:40px;
+	font-size:32px;
 	border-bottom:1px solid #C0C0C0;
 }
 
@@ -292,14 +292,14 @@ a:focus {
 	margin: 15px 0 15px 0;
 	*/
         margin: 1.0em 0 1.0em 0;
-	padding: 2.5px 0 2.5px 5px;
+	padding: 2.5px 0 2.5px 0px;
 }
 
 .entry-content h5,
 .entry-summary h5,
 .page-content h5,
 .comment-content h5 {
-	font-size: 18px;
+	font-size: 20px;
 	/*
 	font: normal normal Arial, Serif;
 	*/
@@ -307,6 +307,16 @@ a:focus {
 	text-transform: none;
 	margin: 5px 0 5px 0;
 	padding: 0px 0.0em 0em;
+}
+
+.entry-content h6,
+.entry-summary h6,
+.page-content h6,
+.comment-content h6 {
+	font-size: 20px;
+	/*
+	font: normal normal Arial, Serif;
+	*/
 }
 
 .entry-content h5,
@@ -623,10 +633,10 @@ pre.book-memo {
         background: #beefd5;
 	*/
         font-family: 'Helvetica Neue', 'Helvetica', 'Univers', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
-	font-size: 0.9em;
+	font-size: 17px;
 	border: 0.5px solid #000000;
 	background-color: #E7F1ED;
-	line-height: 1.50;
+	line-height: 1.75;
 }
 
 code {
