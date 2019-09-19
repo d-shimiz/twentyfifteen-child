@@ -26,9 +26,9 @@
 		?>
 
 		<?php
-			if( date('Ym') - get_the_time('Ym') > 99 ) { ?>
+			if( date('Ym') - get_the_time('Ym') > 185 ) { ?>
 				<div class="old-post-message" style="border: 3px solid #b7b7e7; background: #F0F0FA; padding: 2px 5px">
-					<p>この記事は<?php the_time('Y年n月j日') ?>に公開したものです。情報が古い可能性がありますのでご注意ください。</p>
+					<p>この記事は公開されてから半年以上経過しています(公開日<?php the_time('Y年n月j日') ?>)。</p>
 				</div>
 		<?php } ?>
 
