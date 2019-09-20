@@ -2,19 +2,19 @@
 
 // Customize "--more--"
 function modify_read_more_link() {
-    return '<a class="more-link" href="' . get_permalink() . '">続きを読む ≫</a>';
+    return '<a class="more-link" href="' . get_permalink() . '">続きを読む »</a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 
 // Add Original CSS
 function theme_enqueue_styles() {
-        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 function theme_enqueue_styles_toc() {
-        wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/toc.css' );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/toc.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles_toc' );
 
