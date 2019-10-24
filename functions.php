@@ -83,7 +83,6 @@ add_filter( 'comment_form_default_fields', 'custom_comment_form_fields' );
 function hatena_bookmark_button_js() {
 ?>
   <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-}
 <?php
 }
 add_action('wp_head', 'hatena_bookmark_button_js');
