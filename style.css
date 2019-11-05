@@ -225,6 +225,14 @@ a:focus {
         border-bottom: 0;
 }
 
+.widget-title {
+        color: #333;
+        font-family: "Noto Sans", sans-serif;
+        margin: 0 0 1.6em;
+        letter-spacing: 0.04em;
+        text-transform: none;
+}
+
 
 /**
  * 12.1 Posts and pages
