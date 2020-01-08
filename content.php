@@ -26,7 +26,7 @@
 		?>
 
 		<?php
-			if( date('Ym') - get_the_time('Ym') > 60 ) { ?>
+			if( date('Ym') - get_the_time('Ym') > 94 ) { ?>
 				<div class="old-post-message" style="border: 3px solid #b7b7e7; background: #F0F0FA; padding: 2px 5px">
 					<p>この記事は公開されてから半年以上経過しています (公開日<?php the_time('Y年n月j日') ?>)。</p>
 				</div>
