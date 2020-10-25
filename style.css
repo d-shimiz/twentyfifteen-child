@@ -751,3 +751,10 @@ pre.terminal2 {
 	margin-bottom: 0.25em;
 	margin-top: 0.5em;
 }
+
+.twitter-share-button,
+.hatena-bookmark-button-frame {
+/*    margin: 0.1!important; */
+    margin-bottom: 0.25em!important;
+}
+
